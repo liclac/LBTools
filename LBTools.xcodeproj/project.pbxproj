@@ -6,14 +6,112 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		2210572614B9C47900AFEA7F /* lbunpak */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = lbunpak; sourceTree = "<group>"; };
+		2210572714B9C47900AFEA7F /* ovkpack */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ovkpack; sourceTree = "<group>"; };
+		2210572914B9C47900AFEA7F /* lbunpak.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = lbunpak.c; sourceTree = "<group>"; };
+		2210572A14B9C47900AFEA7F /* ovkpack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ovkpack.c; sourceTree = "<group>"; };
+		2210572C14B9C47900AFEA7F /* lbunpak.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = lbunpak.exe; sourceTree = "<group>"; };
+		2210572D14B9C47900AFEA7F /* ovkpack.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = ovkpack.exe; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		221056F614B9BEDD00AFEA7F = {
 			isa = PBXGroup;
 			children = (
+				2210572814B9C47900AFEA7F /* src */,
+				2210572514B9C47900AFEA7F /* bin */,
+				2210572B14B9C47900AFEA7F /* win32 */,
 			);
 			sourceTree = "<group>";
 		};
+		2210572514B9C47900AFEA7F /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				2210572614B9C47900AFEA7F /* lbunpak */,
+				2210572714B9C47900AFEA7F /* ovkpack */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		2210572814B9C47900AFEA7F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2210572914B9C47900AFEA7F /* lbunpak.c */,
+				2210572A14B9C47900AFEA7F /* ovkpack.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		2210572B14B9C47900AFEA7F /* win32 */ = {
+			isa = PBXGroup;
+			children = (
+				2210572C14B9C47900AFEA7F /* lbunpak.exe */,
+				2210572D14B9C47900AFEA7F /* ovkpack.exe */,
+			);
+			path = win32;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		2210571114B9BFE400AFEA7F /* ovkpack */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-o bin/ovkpack src/ovkpack.c";
+			buildConfigurationList = 2210571214B9BFE400AFEA7F /* Build configuration list for PBXLegacyTarget "ovkpack" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/gcc;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = ovkpack;
+			passBuildSettingsInEnvironment = 1;
+			productName = ovkpack;
+		};
+		2210571514B9BFF300AFEA7F /* lbunpak */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-o bin/lbunpak src/lbunpak.c";
+			buildConfigurationList = 2210571614B9BFF300AFEA7F /* Build configuration list for PBXLegacyTarget "lbunpak" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/gcc;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = lbunpak;
+			passBuildSettingsInEnvironment = 1;
+			productName = lbunpak;
+		};
+		2210571914B9C03F00AFEA7F /* ovkpack-win32 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-o win32/ovkpack.exe src/ovkpack.c";
+			buildConfigurationList = 2210571A14B9C03F00AFEA7F /* Build configuration list for PBXLegacyTarget "ovkpack-win32" */;
+			buildPhases = (
+			);
+			buildToolPath = "/opt/local/bin/i386-mingw32-gcc";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "ovkpack-win32";
+			passBuildSettingsInEnvironment = 1;
+			productName = "ovkpack-win32";
+		};
+		2210571D14B9C0E400AFEA7F /* lbunpak-win32 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-o win32/lbunpak.exe src/lbunpak.c";
+			buildConfigurationList = 2210571E14B9C0E400AFEA7F /* Build configuration list for PBXLegacyTarget "lbunpak-win32" */;
+			buildPhases = (
+			);
+			buildToolPath = "/opt/local/bin/i386-mingw32-gcc";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "lbunpak-win32";
+			passBuildSettingsInEnvironment = 1;
+			productName = "lbunpak-win32";
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXProject section */
 		221056F814B9BEDD00AFEA7F /* Project object */ = {
@@ -30,9 +128,14 @@
 				en,
 			);
 			mainGroup = 221056F614B9BEDD00AFEA7F;
+			productRefGroup = 221056F614B9BEDD00AFEA7F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				2210571114B9BFE400AFEA7F /* ovkpack */,
+				2210571514B9BFF300AFEA7F /* lbunpak */,
+				2210571914B9C03F00AFEA7F /* ovkpack-win32 */,
+				2210571D14B9C0E400AFEA7F /* lbunpak-win32 */,
 			);
 		};
 /* End PBXProject section */
@@ -50,6 +153,54 @@
 			};
 			name = Release;
 		};
+		2210571314B9BFE400AFEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2210571414B9BFE400AFEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2210571714B9BFF300AFEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2210571814B9BFF300AFEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2210571B14B9C03F00AFEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2210571C14B9C03F00AFEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2210571F14B9C0E400AFEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2210572014B9C0E400AFEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -61,6 +212,38 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2210571214B9BFE400AFEA7F /* Build configuration list for PBXLegacyTarget "ovkpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2210571314B9BFE400AFEA7F /* Debug */,
+				2210571414B9BFE400AFEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2210571614B9BFF300AFEA7F /* Build configuration list for PBXLegacyTarget "lbunpak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2210571714B9BFF300AFEA7F /* Debug */,
+				2210571814B9BFF300AFEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2210571A14B9C03F00AFEA7F /* Build configuration list for PBXLegacyTarget "ovkpack-win32" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2210571B14B9C03F00AFEA7F /* Debug */,
+				2210571C14B9C03F00AFEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2210571E14B9C0E400AFEA7F /* Build configuration list for PBXLegacyTarget "lbunpak-win32" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2210571F14B9C0E400AFEA7F /* Debug */,
+				2210572014B9C0E400AFEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

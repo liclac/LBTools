@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>lbunpak-win32.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>lbunpak.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>ovkpack-win32.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>ovkpack.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2210570214B9BF0C00AFEA7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2210571114B9BFE400AFEA7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2210571514B9BFF300AFEA7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2210571914B9C03F00AFEA7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2210571D14B9C0E400AFEA7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
