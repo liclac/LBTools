@@ -7,9 +7,19 @@
 		<key>lbunpak-win32.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>5</integer>
 		</dict>
 		<key>lbunpak.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>ovkinfo-win32.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>ovkinfo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -17,7 +27,7 @@
 		<key>ovkpack-win32.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>ovkpack.xcscheme</key>
 		<dict>
@@ -48,6 +58,16 @@
 			<true/>
 		</dict>
 		<key>2210571D14B9C0E400AFEA7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2210572E14B9DD5400AFEA7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2210573214B9DD6600AFEA7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

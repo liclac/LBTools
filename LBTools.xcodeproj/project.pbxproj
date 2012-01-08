@@ -13,6 +13,9 @@
 		2210572A14B9C47900AFEA7F /* ovkpack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ovkpack.c; sourceTree = "<group>"; };
 		2210572C14B9C47900AFEA7F /* lbunpak.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = lbunpak.exe; sourceTree = "<group>"; };
 		2210572D14B9C47900AFEA7F /* ovkpack.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = ovkpack.exe; sourceTree = "<group>"; };
+		2210573614B9DDB400AFEA7F /* ovkinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ovkinfo.c; sourceTree = "<group>"; };
+		2210573714B9E25E00AFEA7F /* ovkinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ovkinfo; sourceTree = "<group>"; };
+		2210573B14B9E2AE00AFEA7F /* ovkinfo.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = ovkinfo.exe; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -30,6 +33,7 @@
 			children = (
 				2210572614B9C47900AFEA7F /* lbunpak */,
 				2210572714B9C47900AFEA7F /* ovkpack */,
+				2210573714B9E25E00AFEA7F /* ovkinfo */,
 			);
 			path = bin;
 			sourceTree = "<group>";
@@ -39,6 +43,7 @@
 			children = (
 				2210572914B9C47900AFEA7F /* lbunpak.c */,
 				2210572A14B9C47900AFEA7F /* ovkpack.c */,
+				2210573614B9DDB400AFEA7F /* ovkinfo.c */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -48,6 +53,7 @@
 			children = (
 				2210572C14B9C47900AFEA7F /* lbunpak.exe */,
 				2210572D14B9C47900AFEA7F /* ovkpack.exe */,
+				2210573B14B9E2AE00AFEA7F /* ovkinfo.exe */,
 			);
 			path = win32;
 			sourceTree = "<group>";
@@ -57,7 +63,7 @@
 /* Begin PBXLegacyTarget section */
 		2210571114B9BFE400AFEA7F /* ovkpack */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "-o bin/ovkpack src/ovkpack.c";
+			buildArgumentsString = "-ggdb -o bin/ovkpack src/ovkpack.c";
 			buildConfigurationList = 2210571214B9BFE400AFEA7F /* Build configuration list for PBXLegacyTarget "ovkpack" */;
 			buildPhases = (
 			);
@@ -71,7 +77,7 @@
 		};
 		2210571514B9BFF300AFEA7F /* lbunpak */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "-o bin/lbunpak src/lbunpak.c";
+			buildArgumentsString = "-ggdb -o bin/lbunpak src/lbunpak.c";
 			buildConfigurationList = 2210571614B9BFF300AFEA7F /* Build configuration list for PBXLegacyTarget "lbunpak" */;
 			buildPhases = (
 			);
@@ -111,6 +117,34 @@
 			passBuildSettingsInEnvironment = 1;
 			productName = "lbunpak-win32";
 		};
+		2210572E14B9DD5400AFEA7F /* ovkinfo-win32 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-o win32/ovkinfo.exe src/ovkinfo.c";
+			buildConfigurationList = 2210572F14B9DD5400AFEA7F /* Build configuration list for PBXLegacyTarget "ovkinfo-win32" */;
+			buildPhases = (
+			);
+			buildToolPath = "/opt/local/bin/i386-mingw32-gcc";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "ovkinfo-win32";
+			passBuildSettingsInEnvironment = 1;
+			productName = "ovkinfo-win32";
+		};
+		2210573214B9DD6600AFEA7F /* ovkinfo */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-ggdb -o bin/ovkinfo src/ovkinfo.c";
+			buildConfigurationList = 2210573314B9DD6600AFEA7F /* Build configuration list for PBXLegacyTarget "ovkinfo" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/gcc;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = ovkinfo;
+			passBuildSettingsInEnvironment = 1;
+			productName = ovkinfo;
+		};
 /* End PBXLegacyTarget section */
 
 /* Begin PBXProject section */
@@ -133,8 +167,10 @@
 			projectRoot = "";
 			targets = (
 				2210571114B9BFE400AFEA7F /* ovkpack */,
+				2210573214B9DD6600AFEA7F /* ovkinfo */,
 				2210571514B9BFF300AFEA7F /* lbunpak */,
 				2210571914B9C03F00AFEA7F /* ovkpack-win32 */,
+				2210572E14B9DD5400AFEA7F /* ovkinfo-win32 */,
 				2210571D14B9C0E400AFEA7F /* lbunpak-win32 */,
 			);
 		};
@@ -201,6 +237,30 @@
 			};
 			name = Release;
 		};
+		2210573014B9DD5400AFEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2210573114B9DD5400AFEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		2210573414B9DD6600AFEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2210573514B9DD6600AFEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -242,6 +302,22 @@
 			buildConfigurations = (
 				2210571F14B9C0E400AFEA7F /* Debug */,
 				2210572014B9C0E400AFEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2210572F14B9DD5400AFEA7F /* Build configuration list for PBXLegacyTarget "ovkinfo-win32" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2210573014B9DD5400AFEA7F /* Debug */,
+				2210573114B9DD5400AFEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2210573314B9DD6600AFEA7F /* Build configuration list for PBXLegacyTarget "ovkinfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2210573414B9DD6600AFEA7F /* Debug */,
+				2210573514B9DD6600AFEA7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

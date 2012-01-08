@@ -43,7 +43,8 @@ void repack(const char *inpath, const char *outpath, bool debug);
 
 int main (int argc, const char * argv[])
 {
-	printf("ovkpack by uppfinnarn (@uppfinnarn on Twitter)" kBR);
+	printf("ovkpack - Little Busters! OVK Packaging Tool" kBR);
+	printf("by uppfinnarn (@uppfinnarn on Twitter)" kBR);
 	printf("Version 0.3, 8 January 2012" kBR);
 	printf(kBR);
 	
