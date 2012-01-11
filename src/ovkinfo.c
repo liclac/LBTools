@@ -68,6 +68,6 @@ int main (int argc, const char * argv[])
 
 void printheader(ovk_header_field_t header, int number)
 {
-	printf("File %4d: %8d\n", number, header.fileID);
+	printf("File %4d: %8d [Length: %8d Location: %8d]\n", number, header.fileID, header.length, header.location);
 	
 }
